@@ -6,22 +6,27 @@
     <title>Document</title>
     <style>
         
-* {
- margin: 0;
+ * {
+  margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: "Redaction 50", serif;
-  list-style: none;
-  text-decoration: none;
-  scroll-behavior: smooth;
-  border: none;
-  outline: none;
-  background-color: #0a0a14;
-  background-image: url("images/cyber.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   color: #fff;
+}
+
+
+/* ---------- header ---------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 6%;
 }
 
 
@@ -36,17 +41,26 @@
   border: 2px solid #00f0ff;
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.5);
+  list-style: none;
+  text-decoration: none;
+  justify-content: center;
 }
 
 .navbar ul {
   display: flex;
   gap: 20px;
+  text-decoration: none;
+}
+
+.navbar a {
+  text-decoration: none;
 }
 
 .navbar li a:hover {
   color: #00f0ff;
   text-decoration: underline;
 }
+
 
 .cv {
   width: 90%;
