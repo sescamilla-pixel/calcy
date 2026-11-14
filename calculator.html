@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+* {
+ margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Redaction 50", serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  border: none;
+  outline: none;
+  background-color: #0a0a14;
+  background-image: url("images/cyber.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+
+.navbar {
+  width: fit-content;
+  margin: 20px auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: #0d0d1a;
+  border: 2px solid #00f0ff;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.5);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li a:hover {
+  color: #00f0ff;
+  text-decoration: underline;
+}
+
+.cv {
+  width: 90%;
+  height: 500px;
+  justify-content: center;
+  position: relative;
+  margin-left: 5%;
+
+}
+    </style>
+</head>
+<body>
+
+    <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li> 
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!--calculator section--->
+  <section class="calculator" id="calculator">
+    <div class="calculator-text">
+      <h3>Our Calculator</h3>
+      <iframe id="cv" class="cv" src="https://circuitverse.org/users/471299/projects/16-bit-calculator-c4aa4c43-7719-4a2c-b2c0-4a94575526a7/simulator/embed"></iframe>
+      <p>
+        This is the calculator that we made using CircuitVerse. It can perform
+        addition and subtraction.
+      </p>
+    </div>
+
+
+</body>
+</html>
